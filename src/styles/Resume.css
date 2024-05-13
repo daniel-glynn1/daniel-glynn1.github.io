@@ -1,0 +1,41 @@
+.resumeOuter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.resumeBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.resumeHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.resumeTitle {
+  align-self: center;
+  padding-bottom: 30px;
+}
+
+.resumeBody h3 {
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.resumeBody p {
+  padding-left: 70px;
+}
