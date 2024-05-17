@@ -38,6 +38,7 @@
 
 .projectsBody h3 {
   padding-left: 50px;
+  font-weight: normal;
 }
 
 .projectsBody p {
@@ -61,7 +62,7 @@
 .todoImages {
   display: flex;
   flex-direction: row;
-  width: 800px;
+  /* width: 800px; */
   justify-content: flex-start;
   gap: 20px;
   padding: 5px;
@@ -113,5 +114,100 @@
   margin-left: 60px;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .projectsBody {
+    width: 95%;
+    overflow-x: auto;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+
+  .projectsBody h2 {
+    padding-left: 0px;
+    padding-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .projectsBody h3 {
+    padding-left: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .projectsBody p {
+    padding-left: 5px;
+    font-size: 0.7rem;
+  }
+  
+  .projectsBody ul {
+    padding-left: 15px;
+    font-size: 0.7rem;
+  }
+
+  .projectsBody a {
+    margin-left: 10px;
+  }
+
+  .expandButton {
+    margin-left: 10px;
+  }
+
+  .todoImages {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .todoImages img {
+    width: 150px;
+  }
+
+  .diceImages {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .diceImages img {
+    width: 95vw;
+    padding-left: 0px;
+  }
+
+  .pigsImages {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .pigsImages img {
+    width: 95vw;
+    padding-left: 0px;
+  }
+  
+  .regisImages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .regisImages img {
+    width: 95vw;
+    padding-left: 0px;
+  }
+  
+  .nbaImages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  .nbaImages img {
+    width: 95vw;
+    padding-left: 0px;
+  }
+  
 }
 

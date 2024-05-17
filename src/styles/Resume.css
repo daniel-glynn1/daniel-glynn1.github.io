@@ -39,3 +39,26 @@
 .resumeBody p {
   padding-left: 70px;
 }
+
+
+@media (max-width: 750px) {
+  .resumeBody h3 {
+    font-size: 0.9rem;
+  }
+  
+  .resumeBody {
+    padding-left: 0px;
+  }
+  
+  .resumeTitle {
+    padding-bottom: 10px;
+  }
+  
+  .resumeBody h3 {
+    padding-left: 10px;
+  }
+  
+  .resumeBody p {
+    padding-left: 30px;
+  }
+}

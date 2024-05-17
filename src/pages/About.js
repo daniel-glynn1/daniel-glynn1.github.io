@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className='aboutOuter'>
       <div className='aboutHeader'>
-        <h2 className='aboutTitle'>ABOUT</h2>
+        <h2 className='aboutTitle'>ABOUT ME</h2>
       </div>
       <div className='aboutBody'>
         <p> Hi! I'm Daniel, a computer scientist and software engineer from Boulder, Colorado passionate about using my skills and knowledge to help people and solve problems. </p> 

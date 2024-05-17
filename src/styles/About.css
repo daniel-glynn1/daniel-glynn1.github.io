@@ -30,3 +30,15 @@
   align-self: center;
   padding-bottom: 30px;
 }
+
+@media (max-width: 750px) {
+  .aboutBody {
+    width: 90%;
+    padding-left: 0px;
+    font-size: 1.2rem;
+  }
+
+  .aboutBody p {
+    font-size: 0.9rem;
+  }
+}
