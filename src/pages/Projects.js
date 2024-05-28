@@ -134,6 +134,9 @@ const Projects = () => {
         <h3>Online multiplayer alternative to Pass the Pigs (a dice game)</h3>   
         { isPigsExpanded ?
           <>
+            <a href="https://pass-em.onrender.com/" target="_blank" rel="noreferrer">
+              Pass 'Em
+            </a>
             <div class="pigsImages">
               <img src={pigs} alt="pigs" />
             </div>

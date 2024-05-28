@@ -22,10 +22,6 @@ const App = () =>  {
             
           </div>
 
-          
-          
-          
-          
         </header>
 
         <main className='main'>
