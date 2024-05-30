@@ -48,12 +48,12 @@ const Projects = () => {
       <div className='projectsBody'>   
         <h2> Todo Today - Habit Tracker </h2> 
         <h3>A daily task tracking app designed to help you build habits</h3>
+        <a href="https://daniel-glynn1.github.io/todotoday-info/" target="_blank" rel="noreferrer">
+          Todo Today Information
+        </a>
         {
           isTodoExpanded ? 
-          <>
-            <a href="https://daniel-glynn1.github.io/todotoday-info/" target="_blank" rel="noreferrer">
-              Todo Today Information
-            </a>
+          <>   
             <p>Features:</p>
             <ul>
               <li>See how you've been doing by checking the history tab</li>
@@ -97,46 +97,14 @@ const Projects = () => {
           {isTodoExpanded ? "Show less" : "Show more"}
         </button>
         
-        
-        <h2> Are My Dice Rigged?</h2>
-        <h3>Web app that tells you the statistical significance of a set of 2-die sums</h3>
-        {
-          isDiceExpanded ?
-          <>
-            <a href="https://daniel-glynn1.github.io/dice-rigged/" target="_blank" rel="noreferrer">
-              Are My Dice Rigged?
-            </a>
-            <div class="diceImages">
-              <img src={dice} alt="dice" />
-            </div>
-            
-
-            <p>About:</p>
-            <ul>
-              <li>Enter the count of each 2-dice sum in its corresponding box and hit calculate</li>
-              <li>Once calculated, you are presented with a graph of the expected values and the actual values, as well as the p-value for the chi-square goodness of fit test that was performed.</li>
-              <li>Gives insight into how likely the results you saw were just due to random chance</li>
-            </ul>
-
-            <p>Technical Details:</p>
-            <ul>
-              <li>Built using React and JavaScript, as well as HTML/CSS</li>
-              <li>Used a chi-square JavaScript library for the p-value calculations</li>
-              <li>Works entirely on the local browser - no connection to a server necessary</li>
-            </ul>
-          </> : <></>
-        }
-        <button class="expandButton" onClick={diceClicked}>
-          {isDiceExpanded ? "Show less" : "Show more"}
-        </button>
           
         <h2>Pass 'Em</h2>
         <h3>Online multiplayer alternative to Pass the Pigs (a dice game)</h3>   
+        <a href="https://pass-em.onrender.com/" target="_blank" rel="noreferrer">
+          Pass 'Em
+        </a>
         { isPigsExpanded ?
           <>
-            <a href="https://pass-em.onrender.com/" target="_blank" rel="noreferrer">
-              Pass 'Em
-            </a>
             <div class="pigsImages">
               <img src={pigs} alt="pigs" />
             </div>
@@ -160,11 +128,48 @@ const Projects = () => {
               <li>Back-end built using Node.js, Express, and socket.io</li>
               <li>Hosting/Deployment coming soon!</li>
             </ul>
+            <a href="https://github.com/daniel-glynn1/pass_em_1" target="_blank" rel="noreferrer">
+              Pass 'Em  GitHub Repository
+            </a>
           </> : <></>
         }
         <button class="expandButton" onClick={pigsClicked}>
           {isPigsExpanded ? "Show less" : "Show more"}
         </button>
+
+
+        <h2> Are My Dice Rigged?</h2>
+        <h3>Web app that tells you the statistical significance of a set of 2-die sums</h3>
+        <a href="https://daniel-glynn1.github.io/dice-rigged/" target="_blank" rel="noreferrer">
+          Are My Dice Rigged?
+        </a>
+        {
+          isDiceExpanded ?
+          <>
+            <div class="diceImages">
+              <img src={dice} alt="dice" />
+            </div>
+            
+
+            <p>About:</p>
+            <ul>
+              <li>Enter the count of each 2-dice sum in its corresponding box and hit calculate</li>
+              <li>Once calculated, you are presented with a graph of the expected values and the actual values, as well as the p-value for the chi-square goodness of fit test that was performed.</li>
+              <li>Gives insight into how likely the results you saw were just due to random chance</li>
+            </ul>
+
+            <p>Technical Details:</p>
+            <ul>
+              <li>Built using React and JavaScript, as well as HTML/CSS</li>
+              <li>Used a chi-square JavaScript library for the p-value calculations</li>
+              <li>Works entirely on the local browser - no connection to a server necessary</li>
+            </ul>
+          </> : <></>
+        }
+        <button class="expandButton" onClick={diceClicked}>
+          {isDiceExpanded ? "Show less" : "Show more"}
+        </button>
+
 
         <h2>Web-based Lumber Market Simulation game</h2>
         <h3>Front-end redesign</h3>
