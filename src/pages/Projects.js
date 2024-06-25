@@ -10,6 +10,7 @@ import todo6 from '../assets/todo-screenshot6.png';
 import todo7 from '../assets/todo-screenshot7.png';
 import dice from '../assets/dice-screenshot.png';
 import pigs from '../assets/pigs-screenshot.png';
+import snap from '../assets/snap-screenshot.png';
 import regis1 from '../assets/regis-screenshot1.png';
 import regis2 from '../assets/regis-screenshot2.png';
 import nba1 from '../assets/nba-screenshot1.png';
@@ -21,6 +22,8 @@ const Projects = () => {
   const [isTodoExpanded, setIsTodoExpanded] = useState(false);
   const [isDiceExpanded, setIsDiceExpanded] = useState(false);
   const [isPigsExpanded, setIsPigsExpanded] = useState(false);
+  const [isSnapExpanded, setIsSnapExpanded] = useState(false);
+
   const [isRegisExpanded, setIsRegisExpanded] = useState(false);
   const [isNBAExpanded, setIsNBAExpanded] = useState(false);
 
@@ -32,6 +35,9 @@ const Projects = () => {
   }
   function pigsClicked() {
     setIsPigsExpanded(!isPigsExpanded);
+  }
+  function snapClicked() {
+    setIsSnapExpanded(!isSnapExpanded);
   }
   function regisClicked() {
     setIsRegisExpanded(!isRegisExpanded);
@@ -59,7 +65,7 @@ const Projects = () => {
               <li>See how you've been doing by checking the history tab</li>
               <li>View history by week or month</li>
               <li>See how many days in a row you've done a task and earn a badge for doing a task every day for an entire week or month</li>
-              <div class="todoImages">
+              <div className="todoImages">
                 <img src={todo0} alt="todo today" />
                 <img src={todo1} alt="todo today" />
                 <img src={todo2} alt="todo today" />
@@ -75,7 +81,7 @@ const Projects = () => {
               <li>Show tasks in a grid or list format</li>
               <li>Set daily reminders for each task</li>
               <li>Dark mode / Light mode</li>
-              <div class="todoImages">
+              <div className="todoImages">
                 <img src={todo4} alt="todo today" />
                 <img src={todo5} alt="todo today" />
                 <img src={todo6} alt="todo today" />
@@ -93,7 +99,7 @@ const Projects = () => {
             </ul>
           </> : <></>
         }
-        <button class="expandButton" onClick={todoClicked}>
+        <button className="expandButton" onClick={todoClicked}>
           {isTodoExpanded ? "Show less" : "Show more"}
         </button>
         
@@ -105,7 +111,7 @@ const Projects = () => {
         </a>
         { isPigsExpanded ?
           <>
-            <div class="pigsImages">
+            <div className="pigsImages">
               <img src={pigs} alt="pigs" />
             </div>
             
@@ -126,15 +132,54 @@ const Projects = () => {
             <ul>
               <li>Front-end built in React using TypeScript and CSS</li>
               <li>Back-end built using Node.js, Express, and socket.io</li>
-              <li>Hosting/Deployment coming soon!</li>
+              <li>Hosted on render.com</li>
             </ul>
             <a href="https://github.com/daniel-glynn1/pass_em_1" target="_blank" rel="noreferrer">
               Pass 'Em  GitHub Repository
             </a>
           </> : <></>
         }
-        <button class="expandButton" onClick={pigsClicked}>
+        <button className="expandButton" onClick={pigsClicked}>
           {isPigsExpanded ? "Show less" : "Show more"}
+        </button>
+
+        <h2>Snapdle</h2>
+        <h3>Daily wordle-style game for guessing Marvel Snap cards</h3>   
+        <a href="https://snap-dle.onrender.com/" target="_blank" rel="noreferrer">
+          Snapdle
+        </a>
+        { isSnapExpanded ?
+          <>
+            <div className="snapImages">
+              <img src={snap} alt="snapdle" />
+            </div>
+            
+            <p>About:</p>
+            <ul>
+              <li>Try to guess a random card from the game Marvel Snap each day</li>
+              <li>For each guess, you get whether the power, cost, ability type, and more match the correct card</li>
+              <li>Easy mode grants more info to you to make guessing easier</li>
+              <li>Server selects a new card each day automatically from database of cards</li>
+              <li>List of cards populate as you are typing your guess</li>
+              <li>Share button that copies results to clipboard</li>
+              <li>Help page to explain how the game works</li>
+              <li>Light/dark mode</li>
+            </ul>
+
+            <p>Technical Details:</p>
+            <ul>
+              <li>Front-end built using Next.js, React, Javascript, and Tailwind</li>
+              <li>Back-end built using Node.js and Express</li>
+              <li>MongoDB used for database</li>
+              <li>Hosted on render.com</li>
+            </ul>
+            <a href="https://github.com/daniel-glynn1/snapdle" target="_blank" rel="noreferrer">
+              Snapdle  GitHub Repository
+            </a>
+          </> : <></>
+        }
+        <button className="expandButton" onClick={snapClicked}>
+          {isSnapExpanded ? "Show less" : "Show more"}
         </button>
 
 
@@ -146,7 +191,7 @@ const Projects = () => {
         {
           isDiceExpanded ?
           <>
-            <div class="diceImages">
+            <div className="diceImages">
               <img src={dice} alt="dice" />
             </div>
             
@@ -166,7 +211,7 @@ const Projects = () => {
             </ul>
           </> : <></>
         }
-        <button class="expandButton" onClick={diceClicked}>
+        <button className="expandButton" onClick={diceClicked}>
           {isDiceExpanded ? "Show less" : "Show more"}
         </button>
 
@@ -175,7 +220,7 @@ const Projects = () => {
         <h3>Front-end redesign</h3>
         {isRegisExpanded ?
           <>
-            <div class="regisImages">
+            <div className="regisImages">
               <img src={regis1} alt="regis" />
               <img src={regis2} alt="regis" />
             </div>
@@ -198,7 +243,7 @@ const Projects = () => {
             </ul>
           </> : <></>
         }
-        <button class="expandButton" onClick={regisClicked}>
+        <button className="expandButton" onClick={regisClicked}>
           {isRegisExpanded ? "Show less" : "Show more"}
         </button>
 
@@ -219,13 +264,13 @@ const Projects = () => {
             </ul>
 
             <p>Some graphs from the report:</p>
-            <div class="nbaImages">
+            <div className="nbaImages">
               <img src={nba1} alt="nba" />
               <img src={nba2} alt="nba" />
             </div>
           </> : <></>
         }
-        <button class="expandButton" onClick={nbaClicked}>
+        <button className="expandButton" onClick={nbaClicked}>
           {isNBAExpanded ? "Show less" : "Show more"}
         </button>
           

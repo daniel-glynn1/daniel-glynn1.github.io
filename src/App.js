@@ -26,8 +26,8 @@ const App = () =>  {
 
         <main className='main'>
           <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/projects" element={<Projects />}/>
+            <Route path="/about" element={<About />} />
+            <Route path="/" element={<Projects />}/>
             <Route path="/resume" element={<Resume />} />            
           </Routes>
         </main>
@@ -41,8 +41,8 @@ const Navigation = () => {
 
   return (
     <nav>
-      <Link to="/" className={location.pathname === '/' ? 'active' : ''}>ABOUT</Link>
-      <Link to="/projects" className={location.pathname === '/projects' ? 'active' : ''}>PROJECTS</Link>
+      <Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>ABOUT</Link>
+      <Link to="/" className={location.pathname === '/' ? 'active' : ''}>PROJECTS</Link>
       <Link to="/resume" className={location.pathname === '/resume' ? 'active' : ''}>RESUME</Link>
     </nav>
   );

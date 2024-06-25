@@ -82,6 +82,11 @@
   padding-left: 70px;
 }
 
+.snapImages img {
+  width: 500px;
+  padding-left: 70px;
+}
+
 .regisImages {
   display: flex;
   flex-direction: column;
@@ -181,6 +186,17 @@
   }
   
   .pigsImages img {
+    width: 95vw;
+    padding-left: 0px;
+  }
+
+  .snapImages {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .snapImages img {
     width: 95vw;
     padding-left: 0px;
   }
