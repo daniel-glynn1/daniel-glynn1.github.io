@@ -1,0 +1,172 @@
+[
+  {
+    "title": "Todo Today - Habit Tracker",
+    "subtitle": "A daily task tracking app designed to help you build habits",
+    "links": 
+      [
+        "https://daniel-glynn1.github.io/todotoday-info/"
+      ],
+    "imageNames":
+      [
+        "todo-screenshot0.png",
+        "todo-screenshot1.png",
+        "todo-screenshot2.png",
+        "todo-screenshot3.png"
+      ],
+    "features": 
+      [
+        "See how you've been doing by checking the history tab",
+        "View history by week or month",
+        "See how many days in a row you've done a task and earn a badge for doing a task every day for an entire week or month",
+        "Need to make a note about a particular task for today? Open up the journal and write it there",
+        "Hide a task if you don't need to worry about it for a while",
+        "Skip a task if you don't need to do it today, and your streak won't be stopped",
+        "Create subtasks to keep track of the different parts of a task",
+        "Reorder, rename, and delete tasks to stay organized",
+        "Tutorial when users open the app for the first time",
+        "Customizable home screen",
+        "Show tasks in a grid or list format",
+        "Set daily reminders for each task",
+        "Dark mode / Light mode",
+        "And many more!"
+      ],
+    "technicalDetails":
+      [
+        "For iOS only",
+        "Built in Swift and SwiftUI",
+        "All data stored locally",
+        "Check it out in the iOS App Store"
+      ]
+  },
+  {
+    "title": "Pass 'Em",
+    "subtitle": "Online multiplayer alternative to Pass the Pigs (a dice game)",
+    "links": 
+      [
+        "https://pass-em.onrender.com/",
+        "https://github.com/daniel-glynn1/pass_em_1"
+      ],
+    "imageNames":
+      [
+        "pigs-screenshot0.png"
+      ],
+    "features": 
+      [
+        "Play the game 'Pass the Pigs' with your friends online",
+        "Create/join a room by name and password or join a random room",
+        "Chat functionality built in to communicate with the other players",
+        "Adjust game settings (number of players, target score) to play the game how you like it",
+        "See the rules of the game in the rules tab",
+        "Messages from the server when someone joins or leaves",
+        "Fun pig rolling animation when you roll",
+        "See the scores of all players in the game",
+        "Restart game button to start the fun again when someone wins"
+      ],
+    "technicalDetails":
+      [
+        "Front-end built in React using TypeScript and CSS",
+        "Back-end built using Node.js, Express, and socket.io",
+        "Hosted on render.com"
+      ]
+  },
+  {
+    "title": "Snapdle",
+    "subtitle": "Daily wordle-style game for guessing Marvel Snap cards",
+    "links": 
+      [
+        "https://snap-dle.onrender.com/",
+        "https://github.com/daniel-glynn1/snapdle"
+      ],
+    "imageNames":
+      [
+        "snap-screenshot0.png"
+      ],
+    "features": 
+      [
+        "Try to guess a random card from the game Marvel Snap each day",
+        "For each guess, you get whether the power, cost, ability type, and more match the correct card",
+        "Easy mode grants more info to you to make guessing easier",
+        "Server selects a new card each day automatically from database of cards",
+        "List of cards populate as you are typing your guess",
+        "Share button that copies results to clipboard",
+        "Help page to explain how the game works",
+        "Light/dark mode"
+      ],
+    "technicalDetails":
+      [
+        "Front-end built using Next.js, React, Javascript, and Tailwind",
+        "Back-end built using Node.js and Express",
+        "MongoDB used for database",
+        "Hosted on render.com"
+      ]
+  },
+  {
+    "title": "Are My Dice Rigged?",
+    "subtitle": "Web app that tells you the statistical significance of a set of 2-die sums",
+    "links": 
+      [
+        "https://daniel-glynn1.github.io/dice-rigged/"
+      ],
+    "imageNames":
+      [
+        "dice-screenshot0.png"
+      ],
+    "features": 
+      [
+        "Enter the count of each 2-dice sum in its corresponding box and hit calculate",
+        "Once calculated, you are presented with a graph of the expected values and the actual values, as well as the p-value for the chi-square goodness of fit test that was performed",
+        "Gives insight into how likely the results you saw were just due to random chance"
+      ],
+    "technicalDetails":
+      [
+        "Built using React and JavaScript, as well as HTML/CSS",
+        "Used a chi-square JavaScript library for the p-value calculations",
+        "Works entirely on the local browser - no connection to a server necessary"
+      ]
+  },
+  {
+    "title": "Web-based Lumber Market Simulation game",
+    "subtitle": "Front-end redesign",
+    "links": [],
+    "imageNames":
+      [
+        "regis-screenshot0.png",
+        "regis-screenshot1.png"
+      ],
+    "features": 
+      [
+        "Front-end development and refactoring of a web-based lumber market simulation game",
+        "Buy/sell lumber in different regions to capitalize on the market",
+        "View messages of actions taken by other players in the game",
+        "Chat feature to communicate with other players"
+      ],
+    "technicalDetails":
+      [
+        "Built using React, Material-UI, and JavaScript",
+        "This was a front-end refactor and redesign, not built from the ground up",
+        "Designed the website to look good on both desktop and mobile devices",
+        "Group project with other students from Colorado School of Mines",
+        "Worked closely with our client, The Regis Company, to meet their requirements"
+      ]
+  },
+  {
+    "title": "'Which Statistics Best Predict the Results of NBA games?'",
+    "subtitle": "NBA Boxscore Data Analysis Project",
+    "links": [],
+    "imageNames":
+      [
+        "nba-screenshot0.png",
+        "nba-screenshot1.png"
+      ],
+    "features": 
+      [
+        "Data Science project working with an NBA boxscore dataset",
+        "Multiple machine learning models fitted to data and assessed to determine which game statistics correlate most with winning and best predict high winning teams"
+      ],
+    "technicalDetails":
+      [
+        "Used Python, scikit-learn, and Jupyter notebooks"
+      ]
+  }
+
+]

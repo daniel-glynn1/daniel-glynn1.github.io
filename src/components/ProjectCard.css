@@ -1,0 +1,171 @@
+.project-card {
+  background: #222;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 20px;
+  
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.expand-button {
+  width: 20px;
+  margin: 2px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+#expanded {
+  background-color: #444;
+}
+#expanded:hover {
+  background-color: #555;
+}
+#not-expanded {
+  background-color: var(--green);
+}
+#not-expanded:hover {
+  background-color: var(--lightgreen);
+}
+
+.project-info {
+  padding: 20px;
+  width: 100%;
+  margin-left: 5px;
+
+}
+
+
+
+
+.project-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-card h2, .project-card h3 {
+  margin: 0 0 10px;
+  
+}
+
+.project-card h3 {
+  color: var(--green);
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: right;
+  gap: 5px;
+}
+
+.project-links #first-link {
+  background-color: var(--skyblue);
+}
+
+.project-card a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--purple);
+  color: #000;
+  padding: 5px 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 120px;
+  
+}
+
+
+
+.project-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.project-images img {
+  max-width: 70%;
+  border-radius: 8px;
+  margin: 5px;
+  max-height: 400px;
+}
+
+.project-features {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.project-features, .project-technical-details {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+.project-features li, .project-technical-details li {
+  background: #333;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  /* width: fit-content; */
+}
+
+.project-details h3 {
+  margin-top: 20px;
+}
+
+
+@media (max-width: 750px) {
+  .project-card {
+    margin: 5px 0px;
+    
+    width: 95%;
+  }
+
+  .expand-button {
+    width: 12px;
+    border-radius: 4px;
+  }
+
+  .project-info {
+    padding: 8px;
+    margin-left: 0px;
+  }
+
+  .project-links {
+    font-size: 0.8rem;
+  }
+
+  .project-card a {
+    padding: 3px 4px;
+    width: 60px;
+    text-align: left;
+    align-items: center;
+    gap: 5px;
+
+  }
+
+  .project-images img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 5px;
+    max-height: 300px;
+  }
+
+  .project-features li, .project-technical-details li {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+
+  .project-features {
+    max-height: 150px;
+  }
+}

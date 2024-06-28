@@ -1,9 +1,9 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import About from './pages/About';
-import Projects from './pages/Projects';
 import Resume from './pages/Resume';
-import LinkBox from './pages/LinkBox';
+import LinkBox from './components/LinkBox';
+import ProjectsList from './components/ProjectsList';
 
 import './App.css';
 
@@ -26,9 +26,9 @@ const App = () =>  {
 
         <main className='main'>
           <Routes>
-            <Route path="/about" element={<About />} />
-            <Route path="/" element={<Projects />}/>
-            <Route path="/resume" element={<Resume />} />            
+            <Route path="/about" element={<About/>} />
+            <Route path="/" element={<ProjectsList/>}/>
+            <Route path="/resume" element={<Resume/>} />            
           </Routes>
         </main>
       </div>

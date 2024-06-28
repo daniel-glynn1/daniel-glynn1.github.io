@@ -1,0 +1,19 @@
+.linkBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  gap: 15px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-top: 3px;
+  padding-right: 7px;
+  border-radius: 10px;
+  background-color: var(--white);
+  
+}
+
+.linkBox a {
+  color: var(--dark);
+}

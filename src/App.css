@@ -1,10 +1,11 @@
 :root {
-  /* --primary: #0D052E; */
-  --primary: #1f1f20;
-  --primary-dark: #141414; 
-  --secondary: #00A6ED;
-  --tertiary: #FF312E;
-  --fourth: #2CDA9D;
+  --dark: #1f1f20;
+  --skyblue: #61dafb;
+  --purple: #8958e5;
+  --green: #40f99b;
+  --lightgreen: #9cecc3;
+  --pink: #e85d75;
+  
   --black: #000;
   --white: #fff;
   --gray: #aaa;
@@ -33,7 +34,7 @@ body {
 }
 
 body {
-  background-color: var(--primary);
+  background-color: var(--dark);
   color: var(--white);
   font-family: Ubuntu, sans-serif;
   display: flex;
@@ -69,7 +70,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
 }
 
 p {
@@ -109,6 +114,11 @@ main {
   flex-direction: column;
 }
 
+html {
+  scrollbar-color: #555 #00000000;
+}
+
+
 /* Responsive styles */
 @media (max-width: 750px) {
   .header {
@@ -131,6 +141,10 @@ main {
     font-size: 1.0rem;
   }
 
+  h3 {
+    font-size: 0.8rem;
+  }
+
   nav a {
     font-size: 0.75rem;
   }
@@ -144,5 +158,8 @@ main {
     height: 30px;
   }
 }
+
+
+
 
 
