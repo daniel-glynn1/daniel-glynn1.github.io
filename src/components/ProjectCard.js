@@ -13,14 +13,34 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="project-card">
     
-      <button className="expand-button" id={`${isExpanded ? 'expanded' : 'not-expanded'}`} onClick={toggleExpand}></button>
+      <button className="expand-button" id={`${isExpanded ? 'expanded' : 'not-expanded'}`} onClick={toggleExpand}>
+        {!isExpanded ? 
+          (
+            <p className="expand-text">EXPAND</p>
+          ) : (
+            <div className="collapse-text-box">
+              <p className="expand-text">COLLAPSE</p>
+              <p className="expand-text">COLLAPSE</p>
+              <p className="expand-text">COLLAPSE</p>
+            </div>
+            
+          )}
+        
+      </button>
       <div className='project-info'>
         <div className="project-header">
-        
-          <div>
-            <h2>{project.title}</h2>
-            <h3>{project.subtitle}</h3>
+          <div className="project-header-left">
+            {!isExpanded && (
+              <div className="project-image-header">
+                <img src={require(`../assets/${project.imageNames[0]}`)} alt={project.title} />
+              </div>
+            )}
+            <div>
+              <h2>{project.title}</h2>
+              <h3>{project.subtitle}</h3>
+            </div>
           </div>
+          
           <div className="project-links">
             {project.links.map((link, index) => (
               <a key={index} id={index === 0 ? "first-link" : ""} href={link} target="_blank" rel="noopener noreferrer">
